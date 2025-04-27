@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link href="surveyform.css" rel="stylesheet" />  
+</head>
+<body>
+
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Please fill out this short survey about your experience.</p>
+
+  <form id="survey-form">
+    <!-- Name -->
+    <label id="name-label" for="name">Name:</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      placeholder="Enter your name" 
+      required
+    ><br><br>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="Enter your email" 
+      required
+    ><br><br>
+
+    <!-- Number -->
+    <label id="number-label" for="number">Age:</label>
+    <input 
+      type="number" 
+      id="number" 
+      name="age" 
+      placeholder="Enter your age" 
+      min="10" 
+      max="100"
+      required
+    ><br><br>
+
+    <!-- Dropdown -->
+    <label for="dropdown">Which option best describes your current role?</label>
+    <select id="dropdown" name="role">
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+    </select><br><br>
+
+    <!-- Radio Buttons -->
+    <p>Would you recommend us?</p>
+    <input type="radio" id="yes" name="recommend" value="yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="recommend" value="no">
+    <label for="no">No</label><br><br>
+
+    <!-- Checkboxes -->
+    <p>What features do you use? (Check all that apply)</p>
+    <input type="checkbox" id="feature1" name="features" value="feature1">
+    <label for="feature1">Feature 1</label><br>
+    <input type="checkbox" id="feature2" name="features" value="feature2">
+    <label for="feature2">Feature 2</label><br><br>
+
+    <!-- Textarea -->
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" placeholder="Enter your comments here..." rows="4" cols="50"></textarea><br><br>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+s
