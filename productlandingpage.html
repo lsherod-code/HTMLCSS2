@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Grass Roots Garden Center</title>
+    <link rel="stylesheet" href="productlandingpage.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <h2><div class="glitch-wrapper">
-   <div class="glitch" data-glitch="LinziSherod.dev">LinziSherod.dev</div>
-</div></h2>
-    </div>
-    <nav class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="https://lsherod-code.github.io/" target="_blank" class="github-link">GitHub</a>
-    </nav>
-  </header>
+    <header id="header">
+       <div class="logo-container">
+            <img src="images/greenhouselogo.png" alt="Logo" id="header-img" />
+        <h1>Grass Roots Garden Center</h1>
+       
+        </div>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#About">About</a>
+             <a class="nav-link" href="#Shop">Shop</a>
+          <a class="nav-link" href="#Learn">Learn</a>
+          
+        </nav>
+    </header>
 
-  <section class="hero">
-    <div class="overlay">
-      <div class="hero-content">
-        <h1>Hi, I'm Linzi Sherod<br>A Web Developer &  Designer</h1>
-        <a href="#projects" class="cta-button">View My Work</a>
-      </div>
-    </div>
-    <div class="scroll-down">↓</div>
-  </section>
+    <main>
+        <h2 id="About">About Us</h2>
+    <section class="box-container">
+     <p class='description'> Your location destination for unique flowers, patio/hanging pots, fruit trees and small fruit shrubs. Affordable prices for healthy large shade trees, shrubs, mulch, dirt and more!</p>
+      
 
-  <!-- Sections below are placeholders -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Coming soon...</p>
-  </section>
+      <h2 id="Shop">Shop</h2>
+        <section class="box-container">
+          
+            <div class="plant-card">
+                <img src="images/pottedlavender.png" alt="Lavender" />
+                <h3>Lavender</h3>
+                <p>Soothing and aromatic herb.</p>
+            </div>
+            <div class="plant-card">
+                <img src="images/pottedaloevera.png" alt="Aloe Vera" />
+                <h3>Aloe Vera</h3>
+                <p>Great for soothing skin naturally.</p>
+            </div>
+            <div class="plant-card">
+                <img src="images/pottedchamomile.jpg" alt="Chamomile" />
+                <h3>Chamomile</h3>
+                <p>Calming plant ideal for sensitive skin.</p>
+            </div>
+        </section>
+          <section class="box-container">
+       <h2 id="Learn">Learn</h2>
+        <p class='description'>We offer a variety of classes and workshops to help you learn more about gardening, plant care, and sustainable practices. Join us for hands-on experiences and expert guidance.</p>
+        </section>
+       <section class="box-container">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a front-end developer with a passion for clean design and accessible code.</p>
-  </section>
+      
+        <section id="video-section">
+            <h2>Grass Roots Garden Center</h2>
+            <iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=Xz4WGYjXRsc">
+</iframe>
+        </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: sherodlinzi@gmail.com</p>
-  </section>
+      
+        <section id="form-section">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                <input type="submit" id="submit" value="Submit" />
+            </form>
+        </section>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grass Roots Garden Center. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
