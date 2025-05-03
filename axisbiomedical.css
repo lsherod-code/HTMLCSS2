@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+  background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #00089e 100px), repeating-linear-gradient(#111264, #01010f);
+  background-color: #00089e;
+  background-color: #122eff;
+  background-color: #0085ff;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+  background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #0d1168 100px), repeating-linear-gradient(#111264, #01010f);
+  background-color: #0d1168;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font: inter;
+    font-weight: semibold;
+  }
+  
+  .nav-links {
+    display: flex;
+   
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .contact-btn {
+    border: 2px solid white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .hero {
+    padding: 60px 40px;
+    text-align: left;
+  }
+  
+  .hero-content .intro-text {
+    max-width: 500px;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    position: relative;
+  }
+  
+  .hero-content .line {
+    display: inline-block;
+    height: 2px;
+    width: 150px;
+    background: white;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+  
+  .arrow-icon {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .sub-hero {
+    background: radial-gradient(circle at center, #1642ff, #000661);
+    padding: 60px 40px;
+    border-radius: 30px 30px 0 0;
+  }
+  
+  .sub-text {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .underline {
+    border-bottom: 2px solid white;
+  }
+  
