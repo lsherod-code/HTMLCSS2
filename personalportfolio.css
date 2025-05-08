@@ -184,6 +184,16 @@
       padding: 80px 20px;
     }
   }
+
+  .footer {
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    color: #333533;
+    padding: 40px 30px 30px 30px;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0;
+    border-top: 1.5px solid #accbee;
+  }
   
   /* Desktop: 1025px and up */
   @media (min-width: 1025px) {
@@ -201,5 +211,12 @@
   
     section {
       padding: 100px 60px;
+    }
+  }
+ 
+  
+  @media (max-width: 600px) {
+    .footer {
+      padding: 30px 10px 20px 10px; /* More compact padding on mobile */
     }
   }

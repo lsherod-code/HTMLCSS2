@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="personalportfolio.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
@@ -23,7 +23,7 @@
   <section class="hero">
     <div class="overlay">
       <div class="hero-content">
-        <h1>I'm Linzi Sherod<br> Web Developer &  Designer</h1>
+        <h1>I'm Linzi Sherod<br> A Web Developer &  Designer</h1>
         <a href="#projects" class="cta-button">View My Work</a>
       </div>
     </div>
@@ -42,8 +42,25 @@
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: sherodlinzi@gmail.com</p>
+<form
+  action="https://formspree.io/f/meogkngd"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
   </section>
 </body>
+  <footer>
+    <p>&copy; 2023 Linzi Sherod. All rights reserved.</p>
+  </footer>
+
 </html>
