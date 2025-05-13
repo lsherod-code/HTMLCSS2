@@ -1,105 +1,169 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Helvetica Neue', sans-serif;
-  background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #00089e 100px), repeating-linear-gradient(#111264, #01010f);
-  background-color: #00089e;
-  background-color: #122eff;
-  background-color: #0085ff;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #00089e 100px), repeating-linear-gradient(#111264, #01010f);
+    background-color: #00089e;
     color: white;
     line-height: 1.5;
-  }
-  
-  .navbar {
+}
+
+/* Navbar */
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-  background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #0d1168 100px), repeating-linear-gradient(#111264, #01010f);
-  background-color: #0d1168;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #0d1168 100px), repeating-linear-gradient(#111264, #01010f);
+    background-color: #0d1168;
     position: sticky;
     top: 0;
-  }
-  
-  .logo {
+}
+
+.logo {
     font-size: 2rem;
-    font: inter;
     font-weight: semibold;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     display: flex;
-   
     gap: 20px;
-  }
-  
-  .nav-links a {
-    padding: 30px;
+}
+
+.nav-links a {
+    padding: 10px 20px;
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1rem;
     font-weight: 300;
-  }
-  
-  .contact-btn {
+}
+
+.contact-btn {
     border: 2px solid white;
     padding: 6px 18px;
     border-radius: 20px;
     color: white;
     text-decoration: none;
     font-weight: 500;
-  }
-  
-  .hero {
+}
+
+/* Hero Section */
+.hero {
     padding: 60px 40px;
     text-align: left;
-  }
-  
-  .hero-content .intro-text {
+}
+
+.hero-content .intro-text {
     max-width: 500px;
     font-size: 0.9rem;
     margin-bottom: 40px;
-  }
-  
-  .hero-content h1 {
+}
+
+.hero-content h1 {
     font-size: 3rem;
     font-weight: bold;
     line-height: 1.2;
     position: relative;
-  }
-  
-  .hero-content .line {
+}
+
+.hero-content .line {
     display: inline-block;
     height: 2px;
     width: 150px;
     background: white;
     vertical-align: middle;
     margin: 0 10px;
-  }
-  
-  .arrow-icon {
+}
+
+.arrow-icon {
     font-size: 2rem;
     margin-top: 20px;
     text-align: right;
-  }
-  
-  .sub-hero {
+}
+
+/* Sub-Hero Section */
+.sub-hero {
     background: radial-gradient(circle at center, #1642ff, #000661);
     padding: 60px 40px;
     border-radius: 30px 30px 0 0;
-  }
-  
-  .sub-text {
+}
+
+.sub-text {
     font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
-  }
-  
-  .underline {
+}
+
+.underline {
     border-bottom: 2px solid white;
-  }
-  
+}
+
+/* Responsive Design */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .intro-text {
+        font-size: 0.8rem;
+    }
+
+    .sub-hero {
+        padding: 40px 20px;
+    }
+
+    .sub-text {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .intro-text {
+        font-size: 0.7rem;
+    }
+
+    .arrow-icon {
+        font-size: 1.5rem;
+    }
+
+    .sub-text {
+        font-size: 1rem;
+    }
+}
+
